@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: configclient
+  cloud:
+    config:
+      uri: http://localhost:8888/
+
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        includes: "*"
