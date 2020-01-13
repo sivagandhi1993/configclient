@@ -1,28 +1,20 @@
 server:
   port: 8971
 
-spring:
-  profiles:
-    active: dev
----
-spring:
-  profiles: dev
-  data.mongodb:
-    host: localhost
-    port: 27017
-    database: local
----
-spring:
-  profiles: nonprod
-  host: localhost
-  port: 27017
-  database: local
----
-spring:
-  profiles: prod
-  host: localhost
-  port: 27017
-  database: local
----
-spring:
-  profiles: test
+#spring:
+#  profiles:
+#    active: prod
+#---
+#spring:
+#  profiles: dev
+#  data.mongodb:
+#    host: localhost
+#    port: 27017
+#    database: local
+#---
+#spring:
+#  profiles: prod
+#  host: localhost
+#  port: 27017
+#  database: local
+#---
