@@ -5,6 +5,7 @@ import com.nisum.configclient.repository.ItemReactiveRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,6 +19,7 @@ import static com.nisum.configclient.constants.ItemsConstants.ITEMS_CONSTANTS_UR
 @RestController
 @Slf4j
 @RefreshScope
+@ConfigurationProperties
 public class ItemController {
     @Autowired
     private ItemReactiveRepository itemReactiveRepository;
