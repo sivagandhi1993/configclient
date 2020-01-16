@@ -19,7 +19,6 @@ import static com.nisum.configclient.constants.ItemsConstants.ITEMS_CONSTANTS_UR
 @RestController
 @Slf4j
 @RefreshScope
-@ConfigurationProperties
 public class ItemController {
     @Autowired
     private ItemReactiveRepository itemReactiveRepository;
